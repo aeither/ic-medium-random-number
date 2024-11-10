@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "guessing_number_backend": {
+      "main": "src/guessing_number_backend/main.mo",
+      "type": "motoko"
+    },
+    "guessing_number_frontend": {
+      "dependencies": [
+        "guessing_number_backend"
+      ],
+      "source": [
+        "src/guessing_number_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "guessing_number_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
